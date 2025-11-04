@@ -72,61 +72,13 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 20px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/bolt3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
-          <img src='images/bolt3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function bolt3d_start() {
-            document.getElementById('bolt3d_image').style.opacity = "1";
-          }
-
-          function bolt3d_stop() {
-            document.getElementById('bolt3d_image').style.opacity = "0";
-          }
-          bolt3d_stop()
-        </script>
-      </td>
-      <td style="padding:12px;width:80%;vertical-align:middle">
-        <a href="https://szymanowiczs.github.io/bolt3d">
-          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
-        </a>
-        <br>
-        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
-        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
-        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
-        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-        <a href="https://holynski.org">Aleksander Holynski</a>,
-        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://henzler.github.io">Philipp Henzler</a>
-        <br>
-        <em>ICCV</em>, 2025
-        <br>
-        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
-        /
-        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
-        <p></p>
-        <p>
-		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
-        </p>
-      </td>
-    </tr>
-
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+					  <img src='images/tracking_before.png' width=100%>
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='images/tracking_after.png' width=100%>
         </div>
         <script type="text/javascript">
           function ever_start() {
@@ -140,82 +92,173 @@
         </script>
       </td>
       <td style="padding:12px;width:80%;vertical-align:middle">
-        <a href="https://half-potato.gitlab.io/posts/ever/">
-			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+        <a href="https://fsoft-aic.github.io/Z-GMOT/">
+			<span class="papertitle">Z-GMOT: Zero-shot Generic Multiple Object Tracking
 </span>
         </a>
         <br>
-				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
-				<a href="https://phogzone.com/">Peter Hedman</a>,
-				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
-        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
-        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
-				<br>
-        <em>ICCV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        <p style="margin: 0; line-height: 1.3;"><strong>Kim Tran</strong>, Anh Duy Le Dinh, Tien-Phat Nguyen, Thinh Phan, Pha Nguyen, Khoa Luu, Donald Adjeroh, Gianfranco Doretto, Ngan Le</p>
+				<br style="line-height: 1.2;">
+        <em style="line-height: 1.3;">Findings of NAACL</em>, 2024 &nbsp
+        <br style="line-height: 1.2;">
+        <a href="https://fsoft-aic.github.io/Z-GMOT/">Project Page</a>
         /
-        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
-        <p></p>
-        <p>
-				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+        <a href="https://aclanthology.org/2024.findings-naacl.220/">Proceedings</a>
+        <p style="margin: 0; line-height: 1.3;">
+          With the insight that existing vision-language models rely heavily on object categories while overlooking object attributes and characteristics, we proposed a benchmark to evaluate this limitation and introduced a framework for generic multiple-object tracking from natural language descriptions, 
+          enabling models to track unseen categories by focusing on object attributes without requiring retraining.
         </p>
       </td>
     </tr>
 
-
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat4d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat4d.jpg' width="160">
+          <div class="two" id='ever_image'>
+					  <img src='images/model_before.png' width=100%>
+					</div>
+          <img src='images/model_after.png' width=100%>
         </div>
         <script type="text/javascript">
-          function cat4d_start() {
-            document.getElementById('cat4d_image').style.opacity = "1";
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
           }
 
-          function cat4d_stop() {
-            document.getElementById('cat4d_image').style.opacity = "0";
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
           }
-          cat4d_stop()
+          ever_stop()
         </script>
       </td>
       <td style="padding:12px;width:80%;vertical-align:middle">
-        <a href="https://cat-4d.github.io/">
-			<span class="papertitle">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+        <a href="https://fsoft-aic.github.io/UGLF/">
+			<span class="papertitle">Unifying Global and Local Scene Entities Modelling for Precise Action Spotting
 </span>
         </a>
         <br>
-				<a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-				<a href="https://poolio.github.io/">Ben Poole</a>,
-				<a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-				<a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
-				<strong>Jonathan T. Barron</strong>,
-				<a href="https://holynski.org/">Aleksander Holynski</a>
-        <br>
-        <em>CVPR</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://cat-4d.github.io/">project page</a>
+        <p style="margin: 0; line-height: 1.3;"><strong>Kim Tran<sup>*</sup></strong>, Phuc Do<sup>*</sup> , Ngoc Ly, Ngan Le</p>
+				<br style="line-height: 1.2;">
+        <em style="line-height: 1.3;">IJCNN</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br style="line-height: 1.2;">
+        <a href="https://fsoft-aic.github.io/UGLF/">Project Page</a>
         /
-        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
-        <p></p>
-        <p>
-				An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
+        <a href="https://arxiv.org/pdf/2404.09951">Arxiv</a>
+        /
+        <a href="https://ieeexplore.ieee.org/document/10650009">Proceedings</a>
+        <p style="margin: 0; line-height: 1.3;">
+          Motivated by the fact that existing video action recognition models process entire frames without adequately considering the objects in the scene and their interactions, our method jointly modeled
+          global scene context and local object interactions (e.g., players, goal, ball, and referee in soccer), achieving state-of-the-art performance (Ranked #1 on the SoccerNet 2024 leaderboard).
         </p>
       </td>
     </tr>
 
-        </td>
-      </tr>
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='images/multiview_after.png' width=100%>
+					</div>
+          <img src='images/multiview_before.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:12px;width:80%;vertical-align:middle">
+        <a href="https://www.sciencedirect.com/science/article/pii/S277237552500543X/pdfft?md5=19a398460ad0d8a56a93ea9de8687952&pid=1-s2.0-S277237552500543X-main.pdf">
+			<span class="papertitle">BroilerTrack: Automatic multi-camera multi-broiler tracking
+</span>
+        </a>
+        <br>
+        <p style="margin: 0; line-height: 1.3;">Thinh Phan, <strong>Kim Tran</strong>, Andrew Lockett, Isaac Phillips, Hao Vo, Duy Le, Michael T. Kidd, James Mason, Santiago Avendano, Ngan Le</p>
+				<br style="line-height: 1.2;">
+        <em style="line-height: 1.3;">Smart Agricultural Technology</em>, 2025 &nbsp
+        <br style="line-height: 1.2;">
+        <a href="https://www.sciencedirect.com/science/article/pii/S277237552500543X/pdfft?md5=19a398460ad0d8a56a93ea9de8687952&pid=1-s2.0-S277237552500543X-main.pdf">Proceedings</a>
+        <p style="margin: 0; line-height: 1.3;">
+          Developed a multi-camera tracking system for tracking poultry in real-world farm environments. By performing camera
+          calibration and designing a multi-view tracking algorithm, the system can accurately track at least 10 chickens across
+          six views of each pen with very high consistency (each chicken is assigned a unique ID that is maintained over time and
+          across all six views).
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='images/tp-gmot_before.png' width=100%>
+					</div>
+          <img src='images/tp-gmot_after.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:12px;width:80%;vertical-align:middle">
+        <a href="https://ebooks.iospress.nl/volumearticle/69595?_gl=1*163jrhi*_up*MQ..*_ga*MTM5MTEzNzY2MS4xNzQ0MTM0MjA1*_ga_6N3Q0141SM*MTc0NDEzNDIwNS4xLjEuMTc0NDEzNDIyNy4wLjAuMA..">
+			<span class="papertitle">TP-GMOT: Tracking Generic Multiple Object by Textual Prompt with Motion-Appearance Cost (MAC) SORT
+</span>
+        </a>
+        <br>
+        <p style="margin: 0; line-height: 1.3;">Duy Le Dinh Anh, <strong>Kim Tran</strong>, Ngan Le</p>
+				<br style="line-height: 1.2;">
+        <em style="line-height: 1.3;">ECAI</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br style="line-height: 1.2;">
+        <a href="https://ebooks.iospress.nl/volumearticle/69595?_gl=1*163jrhi*_up*MQ..*_ga*MTM5MTEzNzY2MS4xNzQ0MTM0MjA1*_ga_6N3Q0141SM*MTc0NDEzNDIwNS4xLjEuMTc0NDEzNDIyNy4wLjAuMA..">Proceedings</a>
+
+      </td>
+    </tr>
+
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='images/accv_before.png' width=100%>
+					</div>
+          <img src='images/accv_after.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:12px;width:80%;vertical-align:middle">
+        <a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Le_Dinh_Anh_Enhanced_Kalman_with_Adaptive_Appearance_Motion_SORT_for_Grounded_Generic_ACCV_2024_paper.pdf">
+			<span class="papertitle">Enhanced Kalman with Adaptive Appearance Motion SORT for Grounded Generic Multiple Object Tracking
+</span>
+        </a>
+        <br>
+        <p style="margin: 0; line-height: 1.3;">Duy Le Dinh Anh, <strong>Kim Tran</strong>, Quang Thuc Nguyen, Ngan Le</p>
+				<br style="line-height: 1.2;">
+        <em style="line-height: 1.3;">ACCV</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br style="line-height: 1.2;">
+        <a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Le_Dinh_Anh_Enhanced_Kalman_with_Adaptive_Appearance_Motion_SORT_for_Grounded_Generic_ACCV_2024_paper.pdf">Proceedings</a>
+
+      </td>
+    </tr>
+
     </table>
   </body>
 </html>
